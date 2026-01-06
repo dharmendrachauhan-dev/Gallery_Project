@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Card from "./components/Card";
+import Togglebtn from "./components/Togglebtn";
+
 
 function App() {
   const [userData, setUserData] = useState([]);
@@ -30,7 +32,7 @@ function App() {
 
   const getData = async () => {
     const response = await axios.get(
-      `https://picsum.photos/v2/list?page=${index}&limit=20`
+      `https://picsum.photos/v2/list?page=${index}&limit=2`
     );
     setUserData(response.data);
   };
@@ -58,7 +60,14 @@ function App() {
 
   return (
     <div>
-      <div className="bg-black h-screen overflow-auto text-white">
+      <div className="dark:bg-black dark:text-white">
+        <div className="flex justify-between px-20 h-20 items-center">
+        <p className="font-bold text-xl">ReactJs</p>
+        <Togglebtn />
+        </div>
+        
+      </div>
+      <div className="dark:bg-black dark:text-white h-[calc(100vh-80px)] overflow-auto">
         <div className="flex flex-wrap gap-4 h-[85%] m-4 justify-center items-center">
           {printUserData}
         </div>

@@ -4,7 +4,7 @@ function Card(props) {
   return (
     <div>
       <a href={props.elem.url}>
-            <div className="h-40 w-45 bg-white overflow-hidden rounded-2xl">
+            <div className="h-80 w-80 bg-white overflow-hidden rounded-2xl">
               <img
                 className="object-cover h-full w-full "
                 src={props.elem.download_url}
