@@ -11,6 +11,7 @@ A modern and responsive **Gallery Application** built using **React + Vite**, wh
 - 🌐 **API Integration** – Fetching dynamic gallery data
 - 🎨 **Tailwind CSS** – Styling
 - 🔄 **Axios API** – API requests
+- 🤖 **Calling API** - External Server
 
 ---
 
